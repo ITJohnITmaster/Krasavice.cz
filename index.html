@@ -1,16 +1,21 @@
 <html>
 <head>
-<title>Krasavice.cz</title>
+<title>Family.cz</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<h1>Irma von Tischnau</h1>
-<ul>
-<li>Zemánkovi</li>
-<li>Schmidtovi</li>
-<li>Sotirovovi</li>
-</ul>
-<img align=center width="50%" src="IMG_20261117_174103829.jpg">
+<h1>Moravské výběr</h1>
+<form method="get" action="index.html">
+Event: <select name="event">
+<option value=0>--|Vyber událost|--</option>
+<option value=1>Setkání ve Strážku</option>
+<option value=2>Krasavice</option>
+</select>
+</form>
+
+<?php
+if($_GET["event"]==1){echo "Rodinné setkání";}
+?>
 </body>
 </html>
